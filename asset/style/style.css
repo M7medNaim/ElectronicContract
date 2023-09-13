@@ -32,7 +32,6 @@
     --green-op2: #54bd95;
     --green-op3: #85DAB9;
 
-
 }
 
 a {
@@ -52,10 +51,11 @@ ul {
 /* end global  */
 /* start main  */
 main {
-    /* background: #52BDAA; */
     padding-bottom: 30px;
-    background: linear-gradient(to bottom, #c1ece5 0%, #fff 100%);
+}
 
+main.home {
+    background: linear-gradient(to bottom, #c1ece5 0%, #fff 100%);
 }
 
 main header {
@@ -102,7 +102,7 @@ main header .container .links a::after {
     -o-transition: width 0.3s ease;
 }
 
-main header .container .links a.enLan::after {
+html[dir="ltr"] main header .container .links a::after {
     content: "";
     display: block;
     width: 0;
@@ -117,12 +117,17 @@ main header .container .links a.enLan::after {
     -ms-transition: width 0.3s ease;
     -o-transition: width 0.3s ease;
 }
-
 main header .container .links a:hover::after {
+    width: 40%;
+}
+html[dir="ltr"] main header .container .links a:hover::after {
     width: 40%;
 }
 
 main header .container .links a.active::after {
+    width: 40%;
+}
+html[dir="ltr"] main header .container .links a.active::after {
     width: 40%;
 }
 
@@ -617,12 +622,30 @@ main.questions section .container .ask div a.rotate {
     left: 0;
     transition: width 0.3s ease;
 }
+html[dir="ltr"] .offcanvas .offcanvas-body ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--green-main);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+}
 
 .offcanvas .offcanvas-body ul li a:hover::after {
     width: 40%;
 }
 
 .offcanvas .offcanvas-body ul li a.active::after {
+    width: 40%;
+}
+html[dir="ltr"] .offcanvas .offcanvas-body ul li a:hover::after {
+    width: 40%;
+}
+
+html[dir="ltr"] .offcanvas .offcanvas-body ul li a.active::after {
     width: 40%;
 }
 
@@ -645,3 +668,697 @@ main.questions section .container .ask div a.rotate {
     display: none;
     width: 0;
 }
+
+/* start login page */
+section.login .container .card {
+    box-shadow: 0px 5px 50px -6px #0000001A;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+section.login .container .card .card-title {
+    color: #64616A;
+    font-size: 24px;
+}
+
+section.login .container .card .card-text {
+    font-size: 14px;
+}
+
+section.login .container .card .card-text a {
+    font-weight: bold;
+}
+
+section.login .container .card .card-text a {
+    color: var(--green-main);
+    font-size: 14px;
+}
+
+section.login .container .card .input-group span.input-group-text {
+    background-color: var(--green-op);
+    color: var(--white);
+    height: 43px;
+    width: 43px;
+    text-align: center;
+}
+
+section.login .container .card .input-group input {
+    height: 43px;
+    border: 0.5px solid #C5C5C5 !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+section.login .container .card .input-group input::placeholder {
+    font-size: 12px;
+    color: #B7B7B7;
+}
+
+section.login .container .card .input-group input:focus {
+    font-size: 12px;
+    box-shadow: 0 0 3px var(--secondary-logo);
+}
+
+section.login .container .card .fogetPassword {
+    font-size: 12px;
+}
+
+section.login .container .card .card-body button {
+    width: 100%;
+    color: var(--white);
+    background-color: #015950;
+    padding: 8px 0;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+section.login .container .google a {
+    color: #0000008A;
+}
+
+
+.line {
+    display: flex;
+    align-items: center;
+    color: #758499;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #758499;
+    margin: 0 2px;
+}
+
+.login-text {
+    font-size: 14px;
+}
+
+/* end login page */
+/* start contact information page */
+.card.contactData {
+    background: linear-gradient(#EFEFEF, #fff);
+}
+
+section.login .container .card.contactData .input-group input {
+    border: 0.5px solid #EFEFEF !important;
+}
+
+section.login .container .card.contactData .input-group input:focus {
+    box-shadow: 0 0 2px var(--secondary-logo);
+}
+
+section.login .container .card.contactData .card-body button {
+    margin-top: 10px;
+}
+
+section.login .container .card.contactData .google {
+    box-shadow: 0px 2px 3px 0px #9696960A;
+    padding: 10px 15px;
+    width: 70%;
+    margin: auto;
+}
+
+/* media page login and contactInformation */
+@media screen and (max-width:568px) {
+    section.login .container .card {
+        box-shadow: none;
+        border: none;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .card.contactData {
+        background: #fff !important;
+    }
+
+    section.login .container .card.contactData .card-body button {
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+
+    section.login .container .card.contactData .google {
+        box-shadow: 0px 2px 3px 0px #9696960A;
+        padding: 10px 15px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+/* end contact information page */
+/* start typeContract page */
+main.typeContract {
+    min-height: 100vh;
+    background-image: url(../image/data/bgTypeContract.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main.typeContract header {
+    background-color: #fff;
+}
+
+section.typeContract .container .textHead h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #303030;
+}
+
+section.typeContract .container .textHead p {
+    font-size: 14px;
+    color: #7B7B7B;
+}
+
+section.typeContract .container .textHead p span {
+    color: #181818;
+}
+
+section.typeContract .custom-radio {
+    cursor: pointer;
+}
+
+section.typeContract .custom-radio input[type="radio"] {
+    display: none;
+}
+
+section.typeContract .custom-radio label {
+    background-color: #fff;
+    border: 2px solid #DCDCDC;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+section.typeContract .custom-radio input[type="radio"]:checked+label {
+    border-color: var(--green-main);
+    transition: 0.5s;
+
+}
+
+section.typeContract button {
+    color: var(--white);
+    background-color: var(--green-main);
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    padding: 7px 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+}
+
+section.typeContract button:hover {
+    background-color: transparent;
+    border: 1px solid var(--green-main);
+    color: var(--green-main);
+    font-weight: bold;
+}
+
+/* end typeContract page */
+
+/* start datapapper page */
+section.datapapper .container h3 {
+    font-size: 27px !important;
+}
+
+section.datapapper .container .box {
+    background: #EDEDED;
+    border: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(0);
+    -webkit-transform: skew(0);
+    -moz-transform: skew(0);
+    -ms-transform: skew(0);
+    -o-transform: skew(0);
+}
+
+section.datapapper .container .box p {
+    display: inline-block;
+    transform: skew(0);
+    -webkit-transform: skew(0);
+    -moz-transform: skew(0);
+    -ms-transform: skew(0);
+    -o-transform: skew(0);
+}
+
+section.datapapper .container .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: var(--green-op2);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+section.datapapper .container .box:hover {
+    color: #fff;
+}
+
+section.datapapper .container .box:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+@media screen and (max-width:780px) {
+    section.datapapper .container h3 {
+        font-size: 22px !important;
+    }
+}
+
+/* end datapapper page */
+/* start createContract page */
+section.createContract h3{
+    font-size: 28px;
+}
+section.createContract .card{
+    box-shadow: 2px 2px 10px 0px #0000004D;
+    border-radius:50px 20px 20px 20px;
+    -webkit-border-radius:20px 20px 0 0;
+    -moz-border-radius:50px 20px 20px 20px;
+    -ms-border-radius:50px 20px 20px 20px;
+    -o-border-radius:50px 20px 20px 20px;
+}
+section.createContract .card p {
+    font-size: 18px;
+    color: #383838;
+}
+section.createContract .card span {
+    color: var(--green-op);
+}
+section.createContract .card .total {
+    position: relative;
+}
+section.createContract .card .total p{
+    background-color: var(--green-main);
+    color: var(--white);
+    font-size: 15px !important;
+    width: fit-content;
+    padding: 5px 20px;
+    position: absolute;
+    left: -3px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+}
+section.createContract .card .totalEn {
+    position: relative;
+}
+section.createContract .card .totalEn p{
+    background-color: var(--green-main);
+    color: var(--white);
+    font-size: 15px !important;
+    width: fit-content;
+    padding: 5px 20px;
+    position: absolute;
+    right: -4px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+}
+
+@media screen and (max-width:450px) {
+    section.createContract .card p {
+        font-size: 14px;
+    }
+    section.createContract .card span {
+        display: block;
+        line-height: 2px;
+    }
+}
+/* end createContract page */
+/* 6 Instrument data */
+main.InstrumentData {
+    min-height: 100vh;
+    background: linear-gradient(194.08deg, rgba(242, 242, 242, 0.56) -20.24%, rgba(242, 242, 242, 0.31) 100%);
+}
+main.InstrumentData header{
+    background-color: var(--white);
+}
+section.InstrumentData .container .progress {
+    height: 6px; 
+    background: linear-gradient(to right, #EFEFEF 80%, var(--green-op) 75%, var(--green-op) 100%);
+}
+html[dir="ltr"] section.InstrumentData .container .progress {
+    height: 6px; 
+    background: linear-gradient(to left, #EFEFEF 80%, var(--green-op) 75%, var(--green-op) 100%);
+}
+section.InstrumentData .container .progressStep2 {
+    height: 6px; 
+    background: linear-gradient(to right, #EFEFEF 60%, var(--green-op) 50%, var(--green-op) 100%);
+}
+html[dir="ltr"] section.InstrumentData .container .progressStep2 {
+    height: 6px; 
+    background: linear-gradient(to right, #EFEFEF 60%, var(--green-op) 50%, var(--green-op) 100%);
+}
+section.InstrumentData .container .progressStep3 {
+    height: 6px; 
+    background: linear-gradient(to right, #EFEFEF 40%, var(--green-op) 20%, var(--green-op) 100%);
+}
+html[dir="ltr"] section.InstrumentData .container .progressStep3 {
+    height: 6px; 
+    background: linear-gradient(to left, #EFEFEF 40%, var(--green-op) 20%, var(--green-op) 100%);
+}
+
+section.InstrumentData .container .textProgress{
+    font-size: 18px;
+    color: var(--green-main);
+    line-height: 4px;
+}
+section.InstrumentData .container .dataInst p{
+    font-size: 20px;
+    color: #CFCFCF;
+}
+section.InstrumentData .container .dataInst select{
+    width:100%;
+    border: 1px solid #EFEFEF;
+    color: #848484;
+    font-size: 14px;
+    box-shadow: 0 0 7px #EFEFEF;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+section.InstrumentData .container .dataInst input{
+    /* width:100%; */
+    margin-bottom: 1.5rem;
+    border: 1px solid #EFEFEF;
+    color: #848484;
+    font-size: 14px;
+    box-shadow: 0 0 7px #EFEFEF;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+section.InstrumentData .container .dataInst input:focus {
+    border: 1px solid var(--green-op2);
+}
+section.InstrumentData .container .dataInst hr{
+    background-color: #E7E7E7;
+}
+section.InstrumentData .container .dataInst .prevBtn ,
+section.InstrumentData .container .dataInst .nextBtn{
+    width: fit-content;
+    background-color: var(--green-op);
+    padding:10px 40px;
+    color: var(--white);
+    font-size: 14px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+
+}
+section.InstrumentData .container .dataInst .nextBtn{
+    background-color: var(--green-main) !important;
+}
+section.InstrumentData .container .dataInst .prevBtn {
+    display: flex;
+    align-items: center;
+}
+section.InstrumentData .container .dataInst .prevBtn i ,
+section.InstrumentData .container .dataInst .nextBtn i 
+{
+    border: 2px solid var(--white);
+    font-size: 8px;
+    padding: 3px 4px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+section.InstrumentData .container .dataInst .prevBtn:hover i {
+    transform: translateX(80%);
+    -webkit-transform: translateX(80%);
+    -moz-transform: translateX(80%);
+    -ms-transform: translateX(80%);
+    -o-transform: translateX(80%);
+}
+html[dir="ltr"] section.InstrumentData .container .dataInst .prevBtn:hover i {
+    transform: translateX(-80%);
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+}
+section.InstrumentData .container .dataInst .nextBtn:hover i {
+    transform: translateX(-80%);
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+}
+html[dir="ltr"] section.InstrumentData .container .dataInst .nextBtn:hover i {
+    transform: translateX(80%);
+    -webkit-transform: translateX(80%);
+    -moz-transform: translateX(80%);
+    -ms-transform: translateX(80%);
+    -o-transform: translateX(80%);
+}
+
+@media screen and (max-width:370px) {
+    section.InstrumentData .container .dataInst .prevBtn ,
+section.InstrumentData .container .dataInst .nextBtn{
+    padding:6px 20px;
+    font-size: 12px;
+}
+}
+/* page 7 */
+
+section.InstrumentData .container .dataInst .input-group span.input-group-text {
+    background-color: var(--green-op);
+    color: var(--white);
+    height: 43px;
+    width: 43px;
+    text-align: center;
+}
+section.InstrumentData .container .dataInst input[type="number"]{
+    direction: rtl !important;
+}
+html[dir="ltr"] section.InstrumentData .container .dataInst input[type="number"]{
+    direction: ltr !important;
+}
+section.InstrumentData .container .dataInst .input-group input[type="number"] {
+    direction: rtl !important;
+}
+html[dir="ltr"] section.InstrumentData .container .dataInst .input-group input[type="number"]{
+    direction: ltr !important;
+}
+
+/* -- 6 Instrument data -- */
+
+/* -- 8  data -- */
+section.InstrumentData .container .dataInst #uploadButton{
+    width: 100% !important;
+    padding: 10px;
+    color: var(--secondary2);
+    font-size: 12px;
+    background-color: var(--white);
+    border: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+section.InstrumentData .container .dataInst #uploadButton i{
+    font-size: 20px;
+}
+section.InstrumentData .container .dataInst .addPrice{
+    font-size: 12px;
+}
+
+/* --  // 8  data  // -- */
+/* --  10  data   -- */
+section.InstrumentData .container .dataInst select.location{
+    width:calc(100% - 43px) ;
+}
+section.InstrumentData .container .dataInst .imageFile span{
+    font-size: 12px;
+}
+
+/* --  // 10  data  // -- */
+/* --  11  data   -- */
+section.InstrumentData .container .dataInst .inputOption {
+    position: relative;
+}
+section.InstrumentData .container .dataInst .inputOption .optionChoose {
+    position: absolute;
+    left: 20px;
+    top: 29%;
+    font-size: 12px !important;
+    color: var(--green-op) !important;
+}
+html[dir="ltr"] section.InstrumentData .container .dataInst .inputOption {
+    position: relative;
+}
+html[dir="ltr"] section.InstrumentData .container .dataInst .inputOption .optionChoose {
+    position: absolute;
+    right: 20px !important;
+    left: calc(93% - 20px);
+    top: 29%;
+    font-size: 12px !important;
+    color: var(--green-op) !important;
+}
+
+/* --  // 11  data  // -- */
+/* --   12  data  -- */
+section.InstrumentData .container .dataInst .checkBoxs .checkBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+  }
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox label {
+    color: #848484;
+    font-size: 14px;
+  }
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox label span {
+    color: var(--green-main);
+    font-weight: 600;
+  }
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: 300ms;
+    border: 1px solid var(--green-main);
+  }
+  @media screen and (max-width:470px) {
+    section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark.first {
+        height: 1.4em;
+    width: 1.6em;
+    }
+  }
+  @media screen and (max-width:350px) {
+    section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark.first {
+        height: 1.4em;
+    width: 1.9em;
+    }
+  }
+  
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox input:checked ~ .checkmark {
+    background-color: var(--green-main);
+    border-radius: .5rem;
+    animation: pulse 500ms ease-in-out;
+  }
+  
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark:after {
+    left: 0.45em;
+    top: 0.25em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #fff;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 var(--green-op);
+      rotate: 20deg;
+    }
+  
+    50% {
+      rotate: -20deg;
+    }
+  
+    75% {
+      box-shadow: 0 0 0 10px var(--green-op);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 13px var(--green-op2);
+      rotate: 0;
+    }
+  }
+/* --  // 12  data  // -- */
