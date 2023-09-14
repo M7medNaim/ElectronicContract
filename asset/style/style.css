@@ -117,9 +117,11 @@ html[dir="ltr"] main header .container .links a::after {
     -ms-transition: width 0.3s ease;
     -o-transition: width 0.3s ease;
 }
+
 main header .container .links a:hover::after {
     width: 40%;
 }
+
 html[dir="ltr"] main header .container .links a:hover::after {
     width: 40%;
 }
@@ -127,6 +129,7 @@ html[dir="ltr"] main header .container .links a:hover::after {
 main header .container .links a.active::after {
     width: 40%;
 }
+
 html[dir="ltr"] main header .container .links a.active::after {
     width: 40%;
 }
@@ -576,99 +579,6 @@ main.questions section .container .ask div a.rotate {
 /* end questions page */
 
 
-/* offcanvas sidebar */
-.offcanvas .offcanvas-body ul {
-    line-height: 30px;
-    color: var(--secondary-link);
-}
-
-.offcanvas .offcanvas-body ul li {
-    margin-bottom: 60px;
-}
-
-.offcanvas .offcanvas-body ul li a {
-    position: relative;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-}
-
-.offcanvas .offcanvas-body ul li a:hover {
-    color: var(--green-main);
-}
-
-.offcanvas .offcanvas-body ul li a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: var(--green-main);
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    transition: width 0.3s ease;
-}
-
-.offcanvas .offcanvas-body ul li a.enLan::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: var(--green-main);
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    transition: width 0.3s ease;
-}
-html[dir="ltr"] .offcanvas .offcanvas-body ul li a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: var(--green-main);
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    transition: width 0.3s ease;
-}
-
-.offcanvas .offcanvas-body ul li a:hover::after {
-    width: 40%;
-}
-
-.offcanvas .offcanvas-body ul li a.active::after {
-    width: 40%;
-}
-html[dir="ltr"] .offcanvas .offcanvas-body ul li a:hover::after {
-    width: 40%;
-}
-
-html[dir="ltr"] .offcanvas .offcanvas-body ul li a.active::after {
-    width: 40%;
-}
-
-.offcanvas .offcanvas-body ul li.profile a {
-    color: var(--white);
-    background-color: var(--green-main);
-    padding: 8px 15px;
-    font-size: 10px;
-    line-height: normal;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border: none;
-}
-
-.offcanvas .offcanvas-body ul li.profile a:hover::after {
-    content: "";
-    display: none;
-    width: 0;
-}
-
 /* start login page */
 section.login .container .card {
     box-shadow: 0px 5px 50px -6px #0000001A;
@@ -830,6 +740,7 @@ main.typeContract {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 main.typeContract header {
     background-color: #fff;
 }
@@ -967,28 +878,33 @@ section.datapapper .container .box:hover::before {
 
 /* end datapapper page */
 /* start createContract page */
-section.createContract h3{
+section.createContract h3 {
     font-size: 28px;
 }
-section.createContract .card{
+
+section.createContract .card {
     box-shadow: 2px 2px 10px 0px #0000004D;
-    border-radius:50px 20px 20px 20px;
-    -webkit-border-radius:20px 20px 0 0;
-    -moz-border-radius:50px 20px 20px 20px;
-    -ms-border-radius:50px 20px 20px 20px;
-    -o-border-radius:50px 20px 20px 20px;
+    border-radius: 50px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 50px 20px 20px 20px;
+    -ms-border-radius: 50px 20px 20px 20px;
+    -o-border-radius: 50px 20px 20px 20px;
 }
+
 section.createContract .card p {
     font-size: 18px;
     color: #383838;
 }
+
 section.createContract .card span {
     color: var(--green-op);
 }
+
 section.createContract .card .total {
     position: relative;
 }
-section.createContract .card .total p{
+
+section.createContract .card .total p {
     background-color: var(--green-main);
     color: var(--white);
     font-size: 15px !important;
@@ -1003,10 +919,12 @@ section.createContract .card .total p{
     -ms-border-radius: 0 10px 10px 0;
     -o-border-radius: 0 10px 10px 0;
 }
+
 section.createContract .card .totalEn {
     position: relative;
 }
-section.createContract .card .totalEn p{
+
+section.createContract .card .totalEn p {
     background-color: var(--green-main);
     color: var(--white);
     font-size: 15px !important;
@@ -1026,56 +944,77 @@ section.createContract .card .totalEn p{
     section.createContract .card p {
         font-size: 14px;
     }
+
     section.createContract .card span {
         display: block;
         line-height: 2px;
     }
 }
+
 /* end createContract page */
 /* 6 Instrument data */
 main.InstrumentData {
     min-height: 100vh;
     background: linear-gradient(194.08deg, rgba(242, 242, 242, 0.56) -20.24%, rgba(242, 242, 242, 0.31) 100%);
 }
-main.InstrumentData header{
+
+main.InstrumentData header {
     background-color: var(--white);
 }
+
 section.InstrumentData .container .progress {
-    height: 6px; 
+    height: 6px;
     background: linear-gradient(to right, #EFEFEF 80%, var(--green-op) 75%, var(--green-op) 100%);
 }
+
 html[dir="ltr"] section.InstrumentData .container .progress {
-    height: 6px; 
+    height: 6px;
     background: linear-gradient(to left, #EFEFEF 80%, var(--green-op) 75%, var(--green-op) 100%);
 }
+
 section.InstrumentData .container .progressStep2 {
-    height: 6px; 
+    height: 6px;
     background: linear-gradient(to right, #EFEFEF 60%, var(--green-op) 50%, var(--green-op) 100%);
 }
+
 html[dir="ltr"] section.InstrumentData .container .progressStep2 {
-    height: 6px; 
+    height: 6px;
     background: linear-gradient(to right, #EFEFEF 60%, var(--green-op) 50%, var(--green-op) 100%);
 }
+
 section.InstrumentData .container .progressStep3 {
-    height: 6px; 
+    height: 6px;
     background: linear-gradient(to right, #EFEFEF 40%, var(--green-op) 20%, var(--green-op) 100%);
 }
+
 html[dir="ltr"] section.InstrumentData .container .progressStep3 {
-    height: 6px; 
+    height: 6px;
     background: linear-gradient(to left, #EFEFEF 40%, var(--green-op) 20%, var(--green-op) 100%);
 }
 
-section.InstrumentData .container .textProgress{
+section.InstrumentData .container .progressStep4 {
+    height: 6px;
+    background: linear-gradient(to right, #EFEFEF 0%, var(--green-op) 0%, var(--green-op) 100%);
+}
+
+html[dir="ltr"] section.InstrumentData .container .progressStep4 {
+    height: 6px;
+    background: linear-gradient(to left, #EFEFEF 0%, var(--green-op) 0%, var(--green-op) 100%);
+}
+
+section.InstrumentData .container .textProgress {
     font-size: 18px;
     color: var(--green-main);
     line-height: 4px;
 }
-section.InstrumentData .container .dataInst p{
+
+section.InstrumentData .container .dataInst p {
     font-size: 20px;
     color: #CFCFCF;
 }
-section.InstrumentData .container .dataInst select{
-    width:100%;
+
+section.InstrumentData .container .dataInst select {
+    width: 100%;
     border: 1px solid #EFEFEF;
     color: #848484;
     font-size: 14px;
@@ -1087,7 +1026,8 @@ section.InstrumentData .container .dataInst select{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
-section.InstrumentData .container .dataInst input{
+
+section.InstrumentData .container .dataInst input {
     /* width:100%; */
     margin-bottom: 1.5rem;
     border: 1px solid #EFEFEF;
@@ -1101,17 +1041,20 @@ section.InstrumentData .container .dataInst input{
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
 }
+
 section.InstrumentData .container .dataInst input:focus {
     border: 1px solid var(--green-op2);
 }
-section.InstrumentData .container .dataInst hr{
-    background-color: #E7E7E7;
+
+section.InstrumentData .container .dataInst hr {
+    background-color: #999494;
 }
-section.InstrumentData .container .dataInst .prevBtn ,
-section.InstrumentData .container .dataInst .nextBtn{
+
+section.InstrumentData .container .dataInst .prevBtn,
+section.InstrumentData .container .dataInst .nextBtn {
     width: fit-content;
     background-color: var(--green-op);
-    padding:10px 40px;
+    padding: 10px 40px;
     color: var(--white);
     font-size: 14px;
     border-radius: 6px;
@@ -1121,16 +1064,18 @@ section.InstrumentData .container .dataInst .nextBtn{
     -o-border-radius: 6px;
 
 }
-section.InstrumentData .container .dataInst .nextBtn{
+
+section.InstrumentData .container .dataInst .nextBtn {
     background-color: var(--green-main) !important;
 }
+
 section.InstrumentData .container .dataInst .prevBtn {
     display: flex;
     align-items: center;
 }
-section.InstrumentData .container .dataInst .prevBtn i ,
-section.InstrumentData .container .dataInst .nextBtn i 
-{
+
+section.InstrumentData .container .dataInst .prevBtn i,
+section.InstrumentData .container .dataInst .nextBtn i {
     border: 2px solid var(--white);
     font-size: 8px;
     padding: 3px 4px;
@@ -1145,6 +1090,7 @@ section.InstrumentData .container .dataInst .nextBtn i
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+
 section.InstrumentData .container .dataInst .prevBtn:hover i {
     transform: translateX(80%);
     -webkit-transform: translateX(80%);
@@ -1152,6 +1098,7 @@ section.InstrumentData .container .dataInst .prevBtn:hover i {
     -ms-transform: translateX(80%);
     -o-transform: translateX(80%);
 }
+
 html[dir="ltr"] section.InstrumentData .container .dataInst .prevBtn:hover i {
     transform: translateX(-80%);
     -webkit-transform: translateX(-80%);
@@ -1159,6 +1106,7 @@ html[dir="ltr"] section.InstrumentData .container .dataInst .prevBtn:hover i {
     -ms-transform: translateX(-80%);
     -o-transform: translateX(-80%);
 }
+
 section.InstrumentData .container .dataInst .nextBtn:hover i {
     transform: translateX(-80%);
     -webkit-transform: translateX(-80%);
@@ -1166,6 +1114,7 @@ section.InstrumentData .container .dataInst .nextBtn:hover i {
     -ms-transform: translateX(-80%);
     -o-transform: translateX(-80%);
 }
+
 html[dir="ltr"] section.InstrumentData .container .dataInst .nextBtn:hover i {
     transform: translateX(80%);
     -webkit-transform: translateX(80%);
@@ -1175,12 +1124,14 @@ html[dir="ltr"] section.InstrumentData .container .dataInst .nextBtn:hover i {
 }
 
 @media screen and (max-width:370px) {
-    section.InstrumentData .container .dataInst .prevBtn ,
-section.InstrumentData .container .dataInst .nextBtn{
-    padding:6px 20px;
-    font-size: 12px;
+
+    section.InstrumentData .container .dataInst .prevBtn,
+    section.InstrumentData .container .dataInst .nextBtn {
+        padding: 6px 20px;
+        font-size: 12px;
+    }
 }
-}
+
 /* page 7 */
 
 section.InstrumentData .container .dataInst .input-group span.input-group-text {
@@ -1190,23 +1141,27 @@ section.InstrumentData .container .dataInst .input-group span.input-group-text {
     width: 43px;
     text-align: center;
 }
-section.InstrumentData .container .dataInst input[type="number"]{
+
+section.InstrumentData .container .dataInst input[type="number"] {
     direction: rtl !important;
 }
-html[dir="ltr"] section.InstrumentData .container .dataInst input[type="number"]{
+
+html[dir="ltr"] section.InstrumentData .container .dataInst input[type="number"] {
     direction: ltr !important;
 }
+
 section.InstrumentData .container .dataInst .input-group input[type="number"] {
     direction: rtl !important;
 }
-html[dir="ltr"] section.InstrumentData .container .dataInst .input-group input[type="number"]{
+
+html[dir="ltr"] section.InstrumentData .container .dataInst .input-group input[type="number"] {
     direction: ltr !important;
 }
 
 /* -- 6 Instrument data -- */
 
 /* -- 8  data -- */
-section.InstrumentData .container .dataInst #uploadButton{
+section.InstrumentData .container .dataInst #uploadButton {
     width: 100% !important;
     padding: 10px;
     color: var(--secondary2);
@@ -1218,19 +1173,22 @@ section.InstrumentData .container .dataInst #uploadButton{
     align-items: center;
     margin-bottom: 1.5rem;
 }
-section.InstrumentData .container .dataInst #uploadButton i{
+
+section.InstrumentData .container .dataInst #uploadButton i {
     font-size: 20px;
 }
-section.InstrumentData .container .dataInst .addPrice{
+
+section.InstrumentData .container .dataInst .addPrice {
     font-size: 12px;
 }
 
 /* --  // 8  data  // -- */
 /* --  10  data   -- */
-section.InstrumentData .container .dataInst select.location{
-    width:calc(100% - 43px) ;
+section.InstrumentData .container .dataInst select.location {
+    width: calc(100% - 43px);
 }
-section.InstrumentData .container .dataInst .imageFile span{
+
+section.InstrumentData .container .dataInst .imageFile span {
     font-size: 12px;
 }
 
@@ -1239,6 +1197,7 @@ section.InstrumentData .container .dataInst .imageFile span{
 section.InstrumentData .container .dataInst .inputOption {
     position: relative;
 }
+
 section.InstrumentData .container .dataInst .inputOption .optionChoose {
     position: absolute;
     left: 20px;
@@ -1246,9 +1205,11 @@ section.InstrumentData .container .dataInst .inputOption .optionChoose {
     font-size: 12px !important;
     color: var(--green-op) !important;
 }
+
 html[dir="ltr"] section.InstrumentData .container .dataInst .inputOption {
     position: relative;
 }
+
 html[dir="ltr"] section.InstrumentData .container .dataInst .inputOption .optionChoose {
     position: absolute;
     right: 20px !important;
@@ -1266,33 +1227,36 @@ section.InstrumentData .container .dataInst .checkBoxs .checkBox input {
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox input {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox {
     display: flex;
     align-items: center;
     position: relative;
     cursor: pointer;
     font-size: 1.2rem;
     user-select: none;
-  }
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox label {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox label {
     color: #848484;
     font-size: 14px;
-  }
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox label span {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox label span {
     color: var(--green-main);
     font-weight: 600;
-  }
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark {
     position: relative;
     top: 0;
     left: 0;
@@ -1302,37 +1266,39 @@ section.InstrumentData .container .dataInst .checkBoxs .checkBox input {
     border-radius: 50%;
     transition: 300ms;
     border: 1px solid var(--green-main);
-  }
-  @media screen and (max-width:470px) {
+}
+
+@media screen and (max-width:470px) {
     section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark.first {
         height: 1.4em;
-    width: 1.6em;
+        width: 1.6em;
     }
-  }
-  @media screen and (max-width:350px) {
+}
+
+@media screen and (max-width:350px) {
     section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark.first {
         height: 1.4em;
-    width: 1.9em;
+        width: 1.9em;
     }
-  }
-  
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox input:checked ~ .checkmark {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox input:checked~.checkmark {
     background-color: var(--green-main);
     border-radius: .5rem;
     animation: pulse 500ms ease-in-out;
-  }
-  
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark:after {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox input:checked ~ .checkmark:after {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox input:checked~.checkmark:after {
     display: block;
-  }
-  
-  section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark:after {
+}
+
+section.InstrumentData .container .dataInst .checkBoxs .checkBox .checkmark:after {
     left: 0.45em;
     top: 0.25em;
     width: 0.25em;
@@ -1340,25 +1306,488 @@ section.InstrumentData .container .dataInst .checkBoxs .checkBox input {
     border: solid #fff;
     border-width: 0 0.15em 0.15em 0;
     transform: rotate(45deg);
-  }
-  
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     0% {
-      box-shadow: 0 0 0 var(--green-op);
-      rotate: 20deg;
+        box-shadow: 0 0 0 var(--green-op);
+        rotate: 20deg;
     }
-  
+
     50% {
-      rotate: -20deg;
+        rotate: -20deg;
     }
-  
+
     75% {
-      box-shadow: 0 0 0 10px var(--green-op);
+        box-shadow: 0 0 0 10px var(--green-op);
     }
-  
+
     100% {
-      box-shadow: 0 0 0 13px var(--green-op2);
-      rotate: 0;
+        box-shadow: 0 0 0 13px var(--green-op2);
+        rotate: 0;
     }
-  }
+}
+
 /* --  // 12  data  // -- */
+/* --   13  data   -- */
+section.InstrumentData .container .dataInst button.verificationAccount {
+    width: fit-content;
+    background-color: var(--green-main);
+    border: none;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--white);
+    font-size: 14px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+/* --  // 13  data  // -- */
+/* --   14  data   -- */
+section.InstrumentData .container .dataInst .headData p {
+    font-size: 14px;
+}
+
+section.InstrumentData .container .dataInst .headData h6 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+section.InstrumentData .container .dataInst .Account_owner {
+    border: 1px solid #EFEFEF;
+    background-color: var(--white);
+    padding: 13px;
+    box-shadow: 0 0 3px #758499;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.InstrumentData .container .dataInst .Account_owner .title {
+    font-size: 14px;
+    color: #373737;
+    margin-bottom: 20px;
+}
+
+section.InstrumentData .container .dataInst .Account_owner p {
+    font-size: 12px;
+}
+
+section.InstrumentData .container .dataInst .Account_owner h6 {
+    font-size: 12px;
+    color: #636363;
+}
+
+section.InstrumentData .container .dataInst a.sendRequest,
+section.InstrumentData .container .dataInst a.senddraft {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    background-color: var(--green-op);
+    color: var(--white);
+}
+
+section.InstrumentData .container .dataInst a.senddraft {
+    background-color: var(--green-main) !important;
+}
+
+/* --  // 14  data  // -- */
+/* --  15 data   -- */
+section.rentContract h3 {
+    font-size: 24px;
+    color: #282828;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+section.rentContract .rentContract {
+    padding: 20px 15px 10px 15px;
+    box-shadow: 0 5px 20px #00000014;
+    background-color: var(--white);
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+section.rentContract .rentContract p {
+    color: #3D3C42;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+section.rentContract .rentContract .owner p,
+section.rentContract .rentContract .tenant p {
+    font-weight: 200 !important;
+}
+
+/* --  // 15  data  // -- */
+/* --  16  data   -- */
+section.fileContract .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section.fileContract .title h3 {
+    font-size: 24px;
+    color: #282828;
+    font-weight: 600;
+}
+
+section.fileContract .title button {
+    color: var(--white);
+    background-color: var(--green-main);
+    height: fit-content !important;
+    padding: 7px 15px;
+    font-size: 12px;
+    border: none;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+section.fileContract .contractPdf {
+    padding: 0 10px;
+    box-shadow: 0 5px 20px #00000014;
+    background-color: var(--white);
+    border-radius: 11px;
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    -ms-border-radius: 11px;
+    -o-border-radius: 11px;
+}
+
+section.fileContract .contractPdf .col-12 {
+    display: flex;
+    align-items: center;
+}
+
+section.fileContract .contractPdf .col-12 p {
+    padding-top: 15px;
+    margin-right: 10px;
+}
+
+html[dir="ltr"] .fileContract .contractPdf .col-12 p {
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+section.fileContract .btns button {
+    display: block;
+    width: 100%;
+    padding: 7px 0px;
+    font-size: 14px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+section.fileContract .btns button:first-child {
+    background-color: var(--green-main);
+    color: var(--white);
+    border: none;
+}
+
+section.fileContract .btns button:last-child {
+    background-color: transparent;
+    color: var(--green-main);
+    border: 1px solid var(--green-main);
+    margin-top: 1.5em;
+}
+
+/* --  // 15  data  // -- */
+
+/* start rating */
+.rating {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    font-size: 0;
+}
+
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: rgba(187, 183, 183, 0.726);
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.rating label:before {
+    content: "\2605";
+}
+
+.rating input[type="radio"]:checked~label:before {
+    content: "\2606";
+    color: #DFB23E;
+}
+
+.messageBox textarea {
+    width: 100%;
+    height: 174px;
+    padding: 10px;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.messageBox2 button {
+    color: var(--white);
+    background-color: var(--green-main);
+    width: 100%;
+    padding: 7px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+}
+
+/* -- rating */
+/* offcanvas sidebar */
+.offcanvas .offcanvas-body ul {
+    line-height: 30px;
+    color: var(--secondary-link);
+}
+
+.offcanvas .offcanvas-body ul li {
+    margin-bottom: 60px;
+}
+
+.offcanvas .offcanvas-body ul li a {
+    position: relative;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.offcanvas .offcanvas-body ul li a:hover {
+    color: var(--green-main);
+}
+
+.offcanvas .offcanvas-body ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--green-main);
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    transition: width 0.3s ease;
+}
+
+.offcanvas .offcanvas-body ul li a.enLan::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--green-main);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+html[dir="ltr"] .offcanvas .offcanvas-body ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--green-main);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.offcanvas .offcanvas-body ul li a:hover::after {
+    width: 40%;
+}
+
+.offcanvas .offcanvas-body ul li a.active::after {
+    width: 40%;
+}
+
+html[dir="ltr"] .offcanvas .offcanvas-body ul li a:hover::after {
+    width: 40%;
+}
+
+html[dir="ltr"] .offcanvas .offcanvas-body ul li a.active::after {
+    width: 40%;
+}
+
+.offcanvas .offcanvas-body ul li.profile a {
+    color: var(--white);
+    background-color: var(--green-main);
+    padding: 8px 15px;
+    font-size: 10px;
+    line-height: normal;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+}
+
+.offcanvas .offcanvas-body ul li.profile a:hover::after {
+    content: "";
+    display: none;
+    width: 0;
+}
+
+/* modal Time of Contract */
+.modalTimeContract .modal-content {
+    border-radius: 16px !important;
+    -webkit-border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    -ms-border-radius: 16px !important;
+    -o-border-radius: 16px !important;
+}
+
+.modalTimeContract .modal-header {
+    border-bottom: none !important;
+}
+
+.modalTimeContract .modal-title {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.modalTimeContract .modal-title i {
+    color: var(--white);
+    background-color: #F15728;
+    font-size: 18px;
+    padding: 10px 17px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-left: 15px;
+}
+
+html[dir="ltr"] .modalTimeContract .modal-title i {
+    margin-right: 15px;
+}
+
+.modalTimeContract .modal-body p {
+    font-size: 12px;
+    text-align: justify;
+    color: #565656 !important;
+    margin-bottom: 25px;
+}
+
+.modalTimeContract .modal-body p span {
+    color: #0008CE !important;
+    font-weight: 600;
+}
+
+.modalTimeContract .modal-body p.note {
+    color: #CE0000 !important;
+    font-weight: 600;
+
+}
+
+/* modal modalSendDraft */
+.modalSendDraft .modal-content {
+    border-radius: 16px !important;
+    -webkit-border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    -ms-border-radius: 16px !important;
+    -o-border-radius: 16px !important;
+    text-align: center;
+}
+
+.modalSendDraft .modal-content i {
+    color: var(--white);
+    background-color: #F15728;
+    font-size: 18px;
+    padding: 10px 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.modalSendDraft .modal-content h6 {
+    font-weight: 600;
+}
+
+.modalSendDraft .modal-content p {
+    font-size: 16px;
+    color: #565656;
+}
+
+.modalSendDraft .modal-content .btns button {
+    color: var(--white);
+    background-color: var(--green-main);
+    width: 45%;
+    font-size: 14px;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    -moz-border-radius: 10px !important;
+    -ms-border-radius: 10px !important;
+    -o-border-radius: 10px !important;
+}
+
+.modalSendDraft .modal-content .btns button:last-child {
+    background-color: red !important;
+    margin-right: 10px;
+}
+
+html[dir="ltr"] .modalSendDraft .modal-content .btns button:last-child {
+    margin-left: 10px;
+}
+
+/* scroll website */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--green-main);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--green-op);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}

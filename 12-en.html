@@ -40,7 +40,7 @@
                             <a href="index-en.html" class=" ms-5 ">Home</a>
                             <a href="questions-en.html" class="">common questions</a>
                             <a href="terms-en.html" class="">Terms & Conditions</a>
-                            <a href="11-ar.html" class="">language</a>
+                            <a href="12-ar.html" class="">language</a>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2 text-end profile">
@@ -55,73 +55,71 @@
         <!-- start login section  -->
         <section class="InstrumentData">
             <div class="container">
-             <div class="row mt-5">
-                 <!-- progress -->
-                 <div class="col-11 col-md-8 m-auto">
-                     <p class="textProgress">Instrument data</p>
-                     <div class="progressStep3"></div>
-                 </div>
-             </div>
-             <div class="row mt-5 dataInst">
-                 <!-- title data -->
-                 <div class="col-12 text-center">
-                     <h4 class="fw-bold">Instrument data</h4>
-                     <p>Fill in the instrument data</p>
-                 </div>
-                 <div class="col-11 col-md-8 col-lg-6 mt-4 m-auto">
-                     <!-- start form submit data -->
-                     <form action="" method="POST">
-                        <!-- unit number  -->
-                        <input type="number" class="form-control" name="unit_number" id="unit_number"
-                            placeholder="unit number">
-                        <!-- type unit  -->
-                        <input type="text" class="form-control" name="type_unit" id="type_unit"
-                            placeholder="type unit">
-                        <!-- room number  -->
-                        <input type="number" class="form-control" name="room_number" id="room_number"
-                            placeholder="room number">
-                        <!-- unit useing  -->
-                        <input type="text" class="form-control" name="unit_useing" id="unit_useing"
-                            placeholder="unit useing">
-                        <!-- floor number  -->
-                        <input type="number" class="form-control" name="floor_number" id="floor_number"
-                            placeholder="floor number">
-                        <!-- Unit area  -->
-                        <input type="text" class="form-control" name="unit_area" id="unit_area"
-                            placeholder="unit area">
-                        <!-- Electricity meter number  -->
-                        <div class="inputOption">
-                            <p class="optionChoose">optional</p>
-                            <input type="number" class="form-control" name="electricityMeter_number"
-                                id="electricityMeter_number" placeholder="Electricity meter number">
-                        </div>
-                        <!-- Water meter number  -->
-                        <div class="inputOption">
-                            <p class="optionChoose">optional</p>
-                            <input type="number" class="form-control" name="WaterMeter_number"
-                                id="WaterMeter_number" placeholder="Water meter number">
-                        </div>
-                        <!-- Number of air conditioners unit -->
-                        <div class="inputOption">
-                            <p class="optionChoose">optional</p>
-                            <input type="text" class="form-control" name="conditionersUnit_number"
-                                id="WaterMeter_number" placeholder="number of air conditioners unit">
-                        </div>
-                        <!-- links prev & next -->
-                        <div class="row">
-                            <div class="col-6 text-start "><a href="#" class="prevBtn">
-                                <i class="fa-solid fa-arrow-left me-2"></i>
-                                previous</a></div>
-                                <div class="col-6 text-end "><a href="#" class="nextBtn">
-                                    next
-                                    <i class="fa-solid fa-arrow-right ms-2"></i>
-                                </a></div>
-                        </div>
-                    </form>
-                 </div>
-             </div>
+                <div class="row mt-5">
+                    <!-- progress -->
+                    <div class="col-11 col-md-8 m-auto">
+                        <p class="textProgress text-end">Financial Statements</p>
+                        <div class="progressStep4"></div>
+                    </div>
+                </div>
+                <div class="row mt-3 dataInst">
+                    <div class="col-11 col-md-8 col-lg-6 mt-4 m-auto">
+                        <!-- start form submit data -->
+                        <form action="" method="POST">
+                            <!-- Contract starting date  -->
+                            <input type="date" class="form-control" name="date_contractStart" id="date_contract"
+                                placeholder="Contract starting date">
+                            <!-- contract year  -->
+                            <div class="inputOption">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#timeContractModal" class="optionChoose">clarification</a>
+                                <input type="text" class="form-control" name="contract_year" id="contract_year"
+                                    placeholder="The duration of the contract is one year">
+                            </div>
+                            <!-- Annual rent amount -->
+                            <input type="number" class="form-control" name="annual_amount" id="annual_amount"
+                                placeholder="Annual rental amount">
+                            <!-- Payment method  -->
+                            <input type="number" class="form-control" name="payment_method" id="payment_method"
+                                placeholder="payment method">
+
+                            <!-- Daily fine  -->
+                            <div class="inputOption">
+                                <p class="optionChoose">optional</p>
+                                <input type="number" class="form-control" name="daily_fine" id="daily_fine"
+                                    placeholder="Daily fine">
+                            </div>
+                            <!-- Sub-delay  -->
+                            <div class="inputOption">
+                                <p class="optionChoose">optional</p>
+                                <input type="number" class="form-control" name="Sub_delay" id="Sub_delay"
+                                    placeholder="Sub-delay">
+                            </div>
+                            <!-- add conditions -->
+                            <div class="inputOption">
+                                <p class="optionChoose">optional</p>
+                                <input type="text" class="form-control" name="conditions" id="conditions"
+                                    placeholder="Would you like to add other conditions ?">
+                            </div>
+                            <!-- checkbox  -->
+                            <div class="checkBoxs mb-4">
+                                <label class="checkBox">
+                                    <input type="checkbox" name="checkbox1" id="checkbox1">
+                                    <div class="checkmark me-2 first"></div>
+                                    <label for="checkbox1">By creating an account , you agree to<span> Our terms and conditions</span></label>
+                                </label>
+                                <label class="checkBox mt-4">
+                                    <input type="checkbox" name="checkbox2" id="checkbox2">
+                                    <div class="checkmark me-2"></div>
+                                    <label for="checkbox2">Would you like a free premium membership?</label>
+                                </label>
+
+                            </div>
+                            <button type="submit" id="submit" name="submit" onclick="" class="verificationAccount">Send the contract for documentation</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-         </section>
+        </section>
         <!-- end section login -->
 
     </main>
@@ -150,13 +148,39 @@
             <li><a href="index-en.html" class="">Home</a></li>
             <li> <a href="questions-en.html" class="">common questions</a></li>
             <li><a href="terms-en.html" class="">Terms & Conditions</a></li>
-            <li> <a href="11-ar.html" class="">language</a></li>
+            <li> <a href="12-ar.html" class="">language</a></li>
             <li class="mt-5 profile"> <a href="#">Profile personly</a></li>
         </ul>
     </div>
 </div>
 
-
+    <!-- Modal  clarification -->
+    <!-- Modal -->
+    <div class="modal fade modalTimeContract" id="timeContractModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <i class="fa-solid fa-exclamation"></i>
+                        Clarification :
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><span>The contract duration is one year</span> = (125 imposed by the government rental network) + a fixed application fee of 125 = 250
+                    </p>
+                    <p><span>The contract duration is one year</span> = (125 imposed by the government rental network) + a fixed application fee of 125 = 250
+                    </p>
+                    <p><span>The contract duration is one year</span> = (125 imposed by the government rental network) + a fixed application fee of 125 = 250
+                    </p>
+                    <p><span>The contract duration is one year</span> = (125 imposed by the government rental network) + a fixed application fee of 125 = 250
+                    </p>
+                    <p class="note">Note: No additional fees are imposed by the application even if the contract duration is 30 years.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- aos Js library -->
     <script src="asset/js/aos.js"></script>
