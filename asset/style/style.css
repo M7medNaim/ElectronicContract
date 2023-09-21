@@ -47,7 +47,13 @@ a.active {
 ul {
     list-style: none;
 }
-
+/* .form-floating label {
+    color: var(--secondary-link);
+}
+html[dir="rtl"] .form-floating input {
+    direction: rtl;
+    color: #000 !important;
+} */
 /* end global  */
 /* start main  */
 main {
@@ -1791,3 +1797,7 @@ body::-webkit-scrollbar-thumb {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+
+
+
+
